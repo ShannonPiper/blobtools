@@ -45,6 +45,20 @@ My example:
  -t /mnt/md0/piper/LH-Assembly/blobtools/hits_generation/testhc1neg/test5blasthc1neg_blobtools.out \
  -o ../test_blobdb/test_hc1neg_blobplot`
  
+ ## generating a view
+ 
+ generic:
+ 
+ `./blobtools view \
+ -i example/my_first_blobplot.blobDB.json \
+ -o example/`
+ 
+ my code:
+ 
+ `./blobtools view \
+ -i ../test_blobdb/test_hc1neg_blobplot.blobDB.json \
+ -o ../test_blobdb/`
+ 
  
 
  
