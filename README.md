@@ -34,9 +34,17 @@ Generic:
  
 My example:
 
-`python /mnt/md0/piper/LH-Assembly/blobtools/blobtools/lib/create.py \
+* must be in blobtools folder to run
+* must index bam files before running `samtools index *.bam`
+
+`conda activate blobtools`
+ 
+ `./blobtools create \
  -i /mnt/md0/piper/LH-Assembly/redundans/hc1neg_redundans/hc1negred/hc1neg_gapcloser.1.1.fa \
- -b /mnt/md0/piper/LH-Assembly/referee/bwa/hc1neg-mapped-hd.bam \
+ -b /mnt/md0/piper/LH-Assembly/psmc/hc1neg/hc1neg_mapped_scaffs.sorted.bam \
  -t /mnt/md0/piper/LH-Assembly/blobtools/hits_generation/testhc1neg/test5blasthc1neg_blobtools.out \
- -o test_hc1neg_blobplot`
+ -o ../test_blobdb/test_hc1neg_blobplot`
+ 
+ 
+
  
