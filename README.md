@@ -1,6 +1,10 @@
 # blobtools
 
+https://blobtools.readme.io/docs/my-first-blobplot
+
 ## creating hits file
+
+https://blobtools.readme.io/docs/taxonomy-file
 
 ### download db
 
