@@ -59,6 +59,35 @@ My example:
  -i ../test_blobdb/test_hc1neg_blobplot.blobDB.json \
  -o ../test_blobdb/`
  
+ ## inspecting the output
  
+ Generic:
+ 
+ `grep '^##' example/my_first_blobplot.blobDB.table.txt ; \
+ grep -v '^##' example/my_first_blobplot.blobDB.table.txt | \
+ column -t -s $'\t'`
+ 
+ Mine:
+ 
+ `grep '^##' test_hc1neg_blobplot.blobDB.table.txt ; \
+ grep -v '^##' test_hc1neg_blobplot.blobDB.table.txt | \
+ column -t -s $'\t'`
+ 
+ ## create a blobplot
+ 
+ Generic:
+ 
+ `./blobtools plot \
+ -i example/blobDB.json \
+ -o example/`
+ 
+ Mine:
+ 
+  `./blobtools plot \
+ -i ../test_blobdb/test_hc1neg_blobplot.blobDB.json \
+ -o ../test_blobdb/`
+ 
+## soooooo...
 
+All of this worked but it has no bacterial hits...
  
